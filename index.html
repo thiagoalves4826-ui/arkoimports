@@ -106,14 +106,6 @@ section { padding-block: 72px 8px; }
 .empty { color: var(--muted); padding: 24px 0; }
 .note-small { font-size: 13px; color: var(--muted); margin-top: 20px; }
 
-.decant { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
-.decant > * { min-width: 0; }
-.decant h2 { font-size: clamp(30px, 4.5vw, 46px); margin-block: 10px 18px; }
-.decant p { color: var(--muted); margin: 0 0 14px; max-width: 52ch; }
-.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
-.steps li { padding: 18px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 90px 1fr; gap: 16px; }
-.steps b { font-family: var(--display); font-weight: 400; font-size: 24px; color: var(--gold-soft); }
-.steps span { color: var(--muted); font-size: 15px; }
 
 .contact { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px; padding: 40px; border: 1px solid var(--line); background: var(--surface); }
 .contact > * { min-width: 0; }
@@ -128,7 +120,7 @@ section { padding-block: 72px 8px; }
 footer { padding-block: 40px 48px; margin-top: 72px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; color: var(--muted); }
 
 @media (max-width: 760px) {
-  .hero, .decant { grid-template-columns: 1fr; gap: 32px; }
+  .hero { grid-template-columns: 1fr; gap: 32px; }
   .hero { padding-block: 40px; }
   .hero-art { order: -1; }
   .mark { width: min(100%, 320px); }
@@ -147,7 +139,6 @@ footer { padding-block: 40px 48px; margin-top: 72px; border-top: 1px solid var(-
     <a class="logo" href="#topo" aria-label="ARKO IMPORTS, início"><img src="assets/arko-logo.png" alt="ARKO"><span>IMPORTS</span></a>
     <nav aria-label="Principal">
       <a href="#colecao">Coleção</a>
-      <a href="#decants">Decants</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
@@ -159,7 +150,7 @@ footer { padding-block: 40px 48px; margin-top: 72px; border-top: 1px solid var(-
       <p>Perfumaria importada selecionada, em frasco fechado ou em decants de 5 ml e 10 ml para você testar antes de levar o frasco inteiro.</p>
       <div class="cta-row">
         <a class="btn solid" href="#colecao">Ver coleção</a>
-        <a class="btn ghost" href="#decants">Como funcionam os decants</a>
+        <a class="btn ghost" href="#contato">Falar com a gente</a>
       </div>
     </div>
     <div class="hero-art">
@@ -188,22 +179,6 @@ footer { padding-block: 40px 48px; margin-top: 72px; border-top: 1px solid var(-
     </div>
     <div class="grid" id="grid" aria-live="polite"></div>
     <p class="note-small">Valores e disponibilidade são exemplos desta primeira versão. Confirme preço e estoque no atendimento.</p>
-  </section>
-
-  <section id="decants">
-    <div class="decant">
-      <div>
-        <span class="eyebrow">Decants</span>
-        <h2>Experimente antes de investir no frasco</h2>
-        <p>Um decant é uma porção do perfume original, envasada em frasco menor com atomizador. Serve para conhecer como a fragrância se comporta na sua pele ao longo do dia.</p>
-        <p>Escolha o tamanho na própria vitrine e envie o pedido pelo WhatsApp.</p>
-      </div>
-      <ul class="steps">
-        <li><b>5 ml</b><span>Ideal para conhecer uma fragrância nova por alguns dias.</span></li>
-        <li><b>10 ml</b><span>Dá para usar por semanas e decidir com calma.</span></li>
-        <li><b>Frasco</b><span>Gostou? O frasco fechado está na mesma vitrine.</span></li>
-      </ul>
-    </div>
   </section>
 
   <section id="contato">
